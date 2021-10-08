@@ -49,11 +49,21 @@
 
         let btn = document.getElementById('cta-btn')
         let overlay = document.getElementById('overlay')
+        let inpt = document.querySelector('#city')
+        console.log(inpt)
+        inpt.addEventListener('keydown', e=>{
+            if(e.code==='Enter'){
+            e.preventDefault();
+            btn.click();
+        }
+        })
         btn.addEventListener('click', e=>{
             overlay.style.display = 'grid'
             overlay.classList.add('animate-overlay')
             setTimeout(()=>{
-            overlay.style.display = 'none'},2650)
+            overlay.style.display = 'none'
+            inpt.value=""
+        },2650)
             
         })
 

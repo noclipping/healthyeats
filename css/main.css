@@ -12,7 +12,7 @@ body {
 
 .hero-bg {
   background: #307d99 url("../images/bg.jpg");
-  background-position: 12% 150%;
+  background-position: 10% 240%;
   color: white;
   text-align: center;
   padding-bottom: 4em;
@@ -246,7 +246,7 @@ p {
     opacity: 1;
   }
   70% {
-    opacity: 100;
+    opacity: 1;
   }
   100% {
     opacity: 0;
